@@ -74,10 +74,8 @@ button {
   font-weight: 600;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 0 auto;
+  padding: 0 50px;
   max-width: 1700px;
 }
 .header {
@@ -1193,6 +1191,7 @@ path {
   display: inline-block;
   width: 40px;
   height: 40px;
+  transition: transform .2s ease-in-out;
 }
 .whatsapp-link {
   margin-right: 20.5px;
@@ -1217,6 +1216,7 @@ path {
   display: inline-block;
   width: 45.5px;
   height: 45.5px;
+  transition: transform .2s ease-in-out;
 }
 .messegers__link:not(:last-child) {
   margin-right: 15px;
@@ -1304,6 +1304,10 @@ path {
   }
   .project__logo:hover {
     filter: none;
+  }
+  .messeger-link:hover,
+  .messegers__link:hover {
+    transform: scale(1.07);
   }
 }
 
@@ -1493,9 +1497,6 @@ path {
   }
   .burger-btn:focus {
     outline: none;
-  }
-  .burger-btn:focus .burger-icon {
-    fill: var(--color-purple);
   }
   .burger {
     flex-direction: column;
@@ -1833,17 +1834,9 @@ path {
     height: 15px;
     background-size: 15px 15px;
   }
-  .burger-icon {
-    display: none;
-  }
-  .search__icon1 {
-    display: none;
-  }
   .search-button {
-    width: 16px;
-    height: 16px;
+    transform: scale(.8) translateX(3px);
     border-radius: 0;
-    background-image: url(../img/Search.svg);
   }
   .burger {
     top: 45px;
@@ -2268,6 +2261,9 @@ path {
   .events {
     padding-top: 50px;
     padding-bottom: 63px;
+  }
+  .event-card:last-child {
+    margin-bottom: 15px;
   }
   .none-768 {
     display: block;
