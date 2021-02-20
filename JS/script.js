@@ -399,6 +399,30 @@ window.addEventListener('DOMContentLoaded', function() {
     })
   })
 
+  document.querySelectorAll('.header-bottom__btn').forEach(function(openMenu) {
+    openMenu.addEventListener('click', function(event) {
+      const path = event.currentTarget.dataset.path
+
+      if (document.querySelector(`[data-target="${path}"]`).classList.contains('is-show')) {
+        document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show')
+        event.currentTarget.classList.toggle('header-bottom__btn--clicked')
+      }
+      
+      else {
+        document.querySelectorAll('.is-show').forEach(function(remove) {
+          remove.classList.remove('is-show')
+        })
+        
+        document.querySelectorAll('.header-bottom__btn--clicked').forEach(function(remove) {
+          remove.classList.remove('header-bottom__btn--clicked')
+        })
+
+        document.querySelector(`[data-target="${path}"]`).classList.add('is-show')
+        event.currentTarget.classList.toggle('header-bottom__btn--clicked')
+      }
+    })
+  })
+
   tippy('#tooltip1', {
     theme: 'blanchard',
     content: 'Пример современных тенденций - современная методология разработки',
