@@ -59,7 +59,7 @@ img {
   max-width: 100%;
 }
 a:focus,
-.header-bottom__link:focus {
+.header-bottom__btn:focus {
   outline: 2px solid var(--color-click);
 }
 button {
@@ -155,24 +155,30 @@ button {
 .header-bottom__item {
   position: relative;
 }
-.header-bottom__link {
+.header-bottom__btn {
   display: inline-block;
   position: relative;
   padding-right: 18px;
   font-size: 18px;
   font-weight: 400;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
   color: white;
   cursor: pointer;
   transition: color .2s ease-in-out;
 }
-.header-bottom__link::before {
+.header-bottom__btn::before {
   content: '\276F';
   position: absolute;
   right: 0;
   width: 10px;
   height: 10px;
   font-size: 13px;
-  transform: rotate(90deg) translateX(9px);
+  transform: rotate(90deg) translateX(7px) ;
+}
+.header-bottom__btn--clicked::before {
+  transform: rotate(-90deg) translate(-6px, -5px);
 }
 .scroll-menu {
   position: absolute;
@@ -186,9 +192,12 @@ button {
   transform: scaleY(.001);
   transition: transform .3s ease;
 }
-.header-bottom__item:hover .scroll-menu {
+.is-show {
   transform: none;
 }
+/* .header-bottom__item:hover .scroll-menu {
+  transform: none;
+} */
 .simplebar-scrollbar::before {
   background-color: var(--color-purple);
 }
@@ -1242,7 +1251,7 @@ path {
     background-image: url(../img/icon-entry-hover.svg);
     background-size: 16px 16px;
   }
-  .header-bottom__item:hover .header-bottom__link{
+  .header-bottom__btn:hover{
     color: var(--color-purple);
   }
   .search:hover rect {
@@ -1312,7 +1321,7 @@ path {
 }
 
 .nav__link:active,
-.header-bottom__link:active,
+.header-bottom__btn:active,
 .event-card__link:active,
 .project__link:active {
   color: var(--color-click);
