@@ -270,10 +270,10 @@ window.addEventListener('DOMContentLoaded', function() {
   
 
   // swiper-mobile
-  const slider = document.querySelector('.swiper-container-4')
+  const slider = document.querySelector('.swiper-container-4');
 
-  let swiperMobile
-  console.log(swiperMobile)
+  let swiperMobile;
+  console.log(swiperMobile);
 
   function mobileSlider() {
     
@@ -309,85 +309,85 @@ window.addEventListener('DOMContentLoaded', function() {
         swiperMobile.destroy()
       }
     }
-  }
+  };
 
-  mobileSlider()
+  mobileSlider();
   
   window.addEventListener('resize', () => {
-    mobileSlider()
-  })
+    mobileSlider();
+  });
 
   document.querySelector('.events__btn').addEventListener('click', function() {
     document.querySelectorAll('.none').forEach(function(el) {
-      el.classList.add('event-card-active')
-      document.querySelector('.events__btn').classList.add('none')
-    })
-  })
+      el.classList.add('event-card-active');
+      document.querySelector('.events__btn').classList.add('none');
+    });
+  });
   document.querySelector('.events__btn').addEventListener('click', function() {
     document.querySelectorAll('.none-768').forEach(function(el) {
-      el.classList.remove('none-768')
-      el.classList.add('event-card-active')
-      document.querySelector('.events__btn').classList.add('none')
-    })
-  })
+      el.classList.remove('none-768');
+      el.classList.add('event-card-active');
+      document.querySelector('.events__btn').classList.add('none');
+    });
+  });
 
   document.querySelectorAll('.editions__label').forEach(function(el) {
     el.addEventListener('click', function(event) {
-      event.target.classList.toggle('editions__label--active')
-    })
-  }) 
+      event.target.classList.toggle('editions__label--active');
+    });
+  }); 
   
   document.querySelectorAll('.tab-button').forEach(function(tabButton) {
     tabButton.addEventListener('click', function(event) {
-      const path = event.currentTarget.dataset.path
+      const path = event.currentTarget.dataset.path;
 
       document.querySelectorAll('.tab-content').forEach(function(tabContent) {
-        tabContent.classList.remove('tab-content-active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
-    })
-  })
+        tabContent.classList.remove('tab-content-active');
+      });
+      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active');
+    });
+  });
 
   document.querySelectorAll('.tab-button').forEach(function(tabButton) {
     tabButton.addEventListener('keydown', function(event) {
       if (event.keyCode === 13) {
-        const path = event.currentTarget.dataset.path
+        const path = event.currentTarget.dataset.path;
 
         document.querySelectorAll('.tab-content').forEach(function(tabContent) {
-          tabContent.classList.remove('tab-content-active')
-        })
-        document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
-      }
-    })
-  })
+          tabContent.classList.remove('tab-content-active');
+        });
+        document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active');
+      };
+    });
+  });
 
   document.querySelectorAll('.tab-button-big').forEach(function(tabButton) {
     tabButton.addEventListener('click', function(event) {
-      const path = event.currentTarget.dataset.path
+      const path = event.currentTarget.dataset.path;
 
       document.querySelectorAll('.tab-content-big').forEach(function(tabContent) {
-        tabContent.classList.remove('tab-content-active-big')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active-big')
+        tabContent.classList.remove('tab-content-active-big');
+      });
+      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active-big');
       
         $('#accordion1').accordion("refresh");  
         $('#accordion2').accordion("refresh"); 
         $('#accordion3').accordion("refresh"); 
         $('#accordion4').accordion("refresh"); 
         $('#accordion5').accordion("refresh");    
-    })
-  })
+    });
+  });
 
   document.querySelectorAll('.tab-button-big').forEach(function(tabButton) {
     tabButton.addEventListener('keydown', function(event) {
       if (event.keyCode === 13) { 
         
-        const path = event.currentTarget.dataset.path
+        const path = event.currentTarget.dataset.path;
 
         document.querySelectorAll('.tab-content-big').forEach(function(tabContent) {
-          tabContent.classList.remove('tab-content-active-big')
-        })
-        document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active-big')
+          tabContent.classList.remove('tab-content-active-big');
+        });
+        document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active-big');
         
           $('#accordion1').accordion("refresh");  
           $('#accordion2').accordion("refresh"); 
@@ -395,48 +395,48 @@ window.addEventListener('DOMContentLoaded', function() {
           $('#accordion4').accordion("refresh"); 
           $('#accordion5').accordion("refresh"); 
  
-      } 
-    })
-  })
+      };
+    });
+  });
 
   document.querySelectorAll('.header-bottom__btn').forEach(function(openMenu) {
     openMenu.addEventListener('click', function(event) {
-      const path = event.currentTarget.dataset.path
+      const path = event.currentTarget.dataset.path;
 
       if (document.querySelector(`[data-target="${path}"]`).classList.contains('is-show')) {
-        document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show')
-        event.currentTarget.classList.toggle('header-bottom__btn--clicked')
+        document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show');
+        event.currentTarget.classList.toggle('header-bottom__btn--clicked');
       }
       
       else {
         document.querySelectorAll('.is-show').forEach(function(remove) {
-          remove.classList.remove('is-show')
-        })
+          remove.classList.remove('is-show');
+        });
         
         document.querySelectorAll('.header-bottom__btn--clicked').forEach(function(remove) {
-          remove.classList.remove('header-bottom__btn--clicked')
-        })
+          remove.classList.remove('header-bottom__btn--clicked');
+        });
 
-        document.querySelector(`[data-target="${path}"]`).classList.add('is-show')
-        event.currentTarget.classList.toggle('header-bottom__btn--clicked')
-      }
-    })
-  })
+        document.querySelector(`[data-target="${path}"]`).classList.add('is-show');
+        event.currentTarget.classList.toggle('header-bottom__btn--clicked');
+      };
+    });
+  });
 
   tippy('#tooltip1', {
     theme: 'blanchard',
     content: 'Пример современных тенденций - современная методология разработки',
     maxWidth: 264
-  })
+  });
   tippy('#tooltip2', {
     theme: 'blanchard',
     content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
     maxWidth: 264
-  })
+  });
   tippy('#tooltip3', {
     theme: 'blanchard',
     content: 'В стремлении повысить качество'
-  })
+  });
 
   var selector = document.querySelector("input[type='tel']");
     
@@ -489,15 +489,15 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   document.querySelector('.burger-btn').addEventListener('click', function() {
-    document.querySelector('.burger').classList.toggle('burger-active')
-    document.querySelector('.burger-btn').classList.toggle('burger-btn-close')
-  })
+    document.querySelector('.burger').classList.toggle('burger-active');
+    document.querySelector('.burger-btn').classList.toggle('burger-btn-close');
+  });
 
   document.querySelector('.spoiler-title').addEventListener('click', function() {
-    document.querySelector('.spoiler-title').classList.toggle('spoiler-active')
-  })
+    document.querySelector('.spoiler-title').classList.toggle('spoiler-active');
+  });
 
   if (window.innerWidth < 768) {
-    mySwiper1.destroy(false, true)
-  }
-})
+    mySwiper1.destroy(false, true);
+  };
+});
