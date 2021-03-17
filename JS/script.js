@@ -270,10 +270,10 @@ window.addEventListener('DOMContentLoaded', function() {
   
 
   // swiper-mobile
-  const slider = document.querySelector('.swiper-container-4');
+  const slider = document.querySelector('.swiper-container-4')
 
-  let swiperMobile;
-  console.log(swiperMobile);
+  let swiperMobile
+  console.log(swiperMobile)
 
   function mobileSlider() {
     
@@ -309,7 +309,7 @@ window.addEventListener('DOMContentLoaded', function() {
         swiperMobile.destroy()
       }
     }
-  };
+  }
 
   mobileSlider();
   
@@ -427,12 +427,12 @@ window.addEventListener('DOMContentLoaded', function() {
     theme: 'blanchard',
     content: 'Пример современных тенденций - современная методология разработки',
     maxWidth: 264
-  });
+  })
   tippy('#tooltip2', {
     theme: 'blanchard',
     content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
     maxWidth: 264
-  });
+  })
   tippy('#tooltip3', {
     theme: 'blanchard',
     content: 'В стремлении повысить качество'
@@ -470,6 +470,8 @@ window.addEventListener('DOMContentLoaded', function() {
       },
     }
   });
+
+  lazyload();
 
   ymaps.ready(init);
   function init(){               

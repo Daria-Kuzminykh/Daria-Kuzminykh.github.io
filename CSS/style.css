@@ -329,13 +329,13 @@ path {
   background-size: cover;
 }
 .swiper-slide-5--1 {
-  background-image: url(../img/Swiper-1/hero-1.jpg);
+  background-image: url(../img/Swiper-1/hero-1.webp);
 }
 .swiper-slide-5--2 {
-  background-image: url(../img/Swiper-1/hero-2.jpg);
+  background-image: url(../img/Swiper-1/hero-2.webp);
 }
 .swiper-slide-5--3 {
-  background-image: url(../img/Swiper-1/hero-3.jpg);
+  background-image: url(../img/Swiper-1/hero-3.webp);
 }
 .hero__img {
   width: 100%;
@@ -403,7 +403,7 @@ path {
 /* gallery */
 .gallery {
   padding: 85px 0;
-  background: url(../img/gallery-fon.jpg) no-repeat;
+  background: url(../img/gallery-fon.webp) no-repeat;
 }
 .gallery__container {
   display: flex;
@@ -737,7 +737,7 @@ path {
   border-color: var(--color-purple);
 }
 .tab-content,
-.tab-content-big {f
+.tab-content-big {
   display: none;
 }
 .tab-content-active,
@@ -841,7 +841,7 @@ path {
 /* editions */
 .editions {
   padding: 82px 0 78px 0;
-  background-image: url(../img/editions-fon.jpg);
+  background-image: url(../img/editions-fon.webp);
 }
 .editions__container {
   display: flex;
@@ -1574,13 +1574,13 @@ path {
     height: 768px;
   }
   .swiper-slide-5--1 {
-    background-image: url(../img/Swiper-1/hero-1024-1.jpg);
+    background-image: url(../img/Swiper-1/hero-1024-1.webp);
   }
   .swiper-slide-5--2 {
-    background-image: url(../img/Swiper-1/hero-1024-2.jpg);
+    background-image: url(../img/Swiper-1/hero-1024-2.webp);
   }
   .swiper-slide-5--3 {
-    background-image: url(../img/Swiper-1/hero-1024-3.jpg);
+    background-image: url(../img/Swiper-1/hero-1024-3.webp);
   }
   .hero__content {
     top: 205px;
@@ -1682,13 +1682,13 @@ path {
     transform: translateY(-2px);
   }
   .swiper-slide-5--1 {
-    background-image: url(../img/Swiper-1/hero-768-1.jpg);
+    background-image: url(../img/Swiper-1/hero-768-1.webp);
   }
   .swiper-slide-5--2 {
-    background-image: url(../img/Swiper-1/hero-768-2.jpg);
+    background-image: url(../img/Swiper-1/hero-768-2.webp);
   }
   .swiper-slide-5--3 {
-    background-image: url(../img/Swiper-1/hero-768-3.jpg);
+    background-image: url(../img/Swiper-1/hero-768-3.webp);
   }
   .about__text,
   .catalog__text,
@@ -1698,7 +1698,7 @@ path {
   .gallery {
     padding-top: 65px;
     height: 1169px;
-    background-image: url(../img/gallery-fon-768.jpg);
+    background-image: url(../img/gallery-fon-768.webp);
     background-size: cover;
   }
   .gallery__container {
@@ -1767,7 +1767,7 @@ path {
     padding-top: 80px;
     padding-bottom: 80px;
     height: 1088px;
-    background-image: url(../img/editions-fon-768.jpg);
+    background-image: url(../img/editions-fon-768.webp);
     background-size: cover;
   }
   .editions__container {
