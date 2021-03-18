@@ -631,6 +631,9 @@ path {
 .artist-info__picture {
   width: 100%;
 }
+.artist-info__picture--mobile {
+  display: none;
+}
 .artist-info__title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -777,19 +780,19 @@ path {
   display: block;
 }
 .event-card--1 {
-  background: url(../img/Events/event-1.jpg) no-repeat top;
+  background: url(../img/Events/event-1.webp) no-repeat top;
 }
 .event-card--2 {
-  background: url(../img/Events/event-2.jpg) no-repeat top center;
+  background: url(../img/Events/event-2.webp) no-repeat top center;
 }
 .event-card--3 {
-  background: url(../img/Events/event-3.jpg) no-repeat top center;
+  background: url(../img/Events/event-3.webp) no-repeat top center;
 }
 .event-card--4 {
-  background: url(../img/Events/event-4.jpg) no-repeat top center;
+  background: url(../img/Events/event-4.webp) no-repeat top center;
 }
 .event-card--5 {
-  background: url(../img/Events/event-5.jpg) no-repeat top center;
+  background: url(../img/Events/event-5.webp) no-repeat top center;
 }
 .event-card__title {
   margin-top: 350px;
@@ -974,22 +977,22 @@ path {
   background: url(../img/Swiper-3/book-1.jpg) no-repeat top;
 }
 .book-2 {
-  background: url(../img/Swiper-3/book-2.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-2.webp) no-repeat top;
 }
 .book-3 {
-  background: url(../img/Swiper-3/book-3.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-3.webp) no-repeat top;
 }
 .book-4 {
-  background: url(../img/Swiper-3/book-4.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-4.webp) no-repeat top;
 }
 .book-5 {
-  background: url(../img/Swiper-3/book-5.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-5.webp) no-repeat top;
 }
 .book-6 {
-  background: url(../img/Swiper-3/book-6.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-6.webp) no-repeat top;
 }
 .book-7 {
-  background: url(../img/Swiper-3/book-7.jpg) no-repeat top;
+  background: url(../img/Swiper-3/book-7.webp) no-repeat top;
 }
 .swiper-container-2 {
   overflow: hidden;
@@ -1950,6 +1953,12 @@ path {
   .catalog__scroll-end {
     display: inline;
   }
+  .artist-info__picture--desctop {
+    display: none;
+  }
+  .artist-info__picture--mobile {
+    display: block;
+  }
   .accordion__header {
     height: 73px;
   }
@@ -2080,6 +2089,27 @@ path {
   .swiper-slide-2:nth-child(3),
   .swiper-slide-2:nth-child(4) {
     margin-bottom: 50px;
+  }
+  .book-1 {
+    background: url(../img/Swiper-3/book-1-mobile.webp) no-repeat top;
+  }
+  .book-2 {
+    background: url(../img/Swiper-3/book-2-mobile.webp) no-repeat top;
+  }
+  .book-3 {
+    background: url(../img/Swiper-3/book-3-mobile.webp) no-repeat top;
+  }
+  .book-4 {
+    background: url(../img/Swiper-3/book-4-mobile.webp) no-repeat top;
+  }
+  .book-5 {
+    background: url(../img/Swiper-3/book-5-mobile.webp) no-repeat top;
+  }
+  .book-6 {
+    background: url(../img/Swiper-3/book-6-mobile.webp) no-repeat top;
+  }
+  .book-7 {
+    background: url(../img/Swiper-3/book-7-mobile.webp) no-repeat top;
   }
   .book__descr {
     flex-direction: column-reverse;
@@ -2236,13 +2266,13 @@ path {
     background-position: 41% 50%;
   }
   .swiper-slide-5--1 {
-    background-image: url(../img/Swiper-1/hero-320-1.jpg);
+    background-image: url(../img/Swiper-1/hero-320-1.webp);
   }
   .swiper-slide-5--2 {
-    background-image: url(../img/Swiper-1/hero-320-2.jpg);
+    background-image: url(../img/Swiper-1/hero-320-2.webp);
   }
   .swiper-slide-5--3 {
-    background-image: url(../img/Swiper-1/hero-320-3.jpg);
+    background-image: url(../img/Swiper-1/hero-320-3.webp);
   }
   .hero__content {
     left: calc((100% - 265px)/2);
@@ -2273,6 +2303,21 @@ path {
   }
   .event-card:last-child {
     margin-bottom: 15px;
+  }
+  .event-card--1 {
+    background-image: url(../img/Events/event-1-mobile.webp);
+  }
+  .event-card--2 {
+    background-image: url(../img/Events/event-2-mobile.webp);
+  }
+  .event-card--3 {
+    background-image: url(../img/Events/event-3-mobile.webp);
+  }
+  .event-card--4 {
+    background-image: url(../img/Events/event-4-mobile.webp);
+  }
+  .event-card--5 {
+    background-image: url(../img/Events/event-5-mobile.webp);
   }
   .none-768 {
     display: block;
